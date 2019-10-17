@@ -14,7 +14,7 @@ namespace TestGame
             int guess = 55;
 
             //產生亂數
-            guess = new Random().Next(100);
+            guess = new Random().Next(20);
             Console.WriteLine("請輸入一個數字(0-100):");
 
             while (true)  //game loop 
@@ -26,11 +26,11 @@ namespace TestGame
                 //離開條件 
                 if (input == guess)
                 {
-                    Console.WriteLine("恭喜你答對了!");
+                    Console.WriteLine("恭喜答對了!");
                     break;
                 }
                 //提示
-                Console.WriteLine("猜錯了，再來一次！");
+                Console.WriteLine("猜錯了，再一次！");
             }
 
             Console.WriteLine("PAUSE");
